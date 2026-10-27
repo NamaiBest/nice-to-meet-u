@@ -230,7 +230,7 @@ function packetText(packet: NonNullable<Awaited<ReturnType<typeof loadPacket>>>)
   const prior = readBrief(packet.person.brief);
   return [
     "YOUR ANGLE (use this only to phrase what the user can say; never treat it as a fact about the other person):",
-    packet.dossier.slice(0, 2500) || "(empty \u2014 openers must not pretend to know what the user builds)",
+    packet.dossier.slice(0, 2500) || "(empty — openers must not pretend to know what the user builds)",
     "",
     "PERSON TO LOOK UP:",
     `${packet.person.name}${packet.person.role ? `, ${packet.person.role}` : ""}${packet.person.company ? ` at ${packet.person.company}` : ""}`,
