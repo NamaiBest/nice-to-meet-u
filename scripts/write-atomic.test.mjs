@@ -116,7 +116,7 @@ test("a staged file on another filesystem is refused, not copied", () => {
   };
 
   assert.throws(() => handOver(staged, target, { rename: crossDevice }), {
-    message: /stage under \\/workspace\\/\\.grok\\//,
+    message: /stage under \/workspace\/\.grok\//,
   });
   // Copying would have had to stage its own temp inside public/, which is the
   // one place stagingError refuses.
@@ -172,11 +172,11 @@ test("every hand-over the og skill prints is one this script accepts", () => {
     ...readdirSync(join(skillDir, "references")).map((f) => join(skillDir, "references", f)),
   ];
   const invocations = docs.flatMap(
-    (path) => readFileSync(path, "utf8").match(/node scripts\\/write-atomic\\.mjs[^\\n`]*/g) ?? [],
+    (path) => readFileSync(path, "utf8").match(/node scripts\/write-atomic\.mjs[^\n`]*/g) ?? [],
   );
   assert.ok(invocations.length >= 3, "og.jpg, x-banner.jpg and site.json each hand over");
   for (const line of invocations) {
-    const argv = line.replace("node scripts/write-atomic.mjs", "").trim().split(/\\s+/);
+    const argv = line.replace("node scripts/write-atomic.mjs", "").trim().split(/\s+/);
     const args = parseWriteAtomicArgs(argv);
     assert.equal(args.error, undefined, line);
     assert.equal(
@@ -196,6 +196,6 @@ test("cli: a missing staged file fails without touching the target", () => {
     { encoding: "utf8" },
   );
   assert.equal(run.status, 1);
-  assert.match(run.stderr, /\\[write-atomic\\]/);
+  assert.match(run.stderr, /\[write-atomic\]/);
   assert.equal(readFileSync(join(root, "public/og.jpg"), "utf8"), "old card");
 });
