@@ -16,18 +16,18 @@
       "screenshot": "/workspace/screenshots/app-builder-preview.png"
     },
     "mobile": {
-        "width": 390,
-        "height": 844,
-        "status": 200,
-        "title": "nice-to-meet-u",
-        "hasCanvas": false,
-        "bodyTextLen": 311,
-        "bodyTextHash": "688a63fcb8fa138f1af040f617b99833e588685bf2b52c2ad5af5f7babaea256",
-        "bodyTextPrefix": "nice-to-meet-u Walk in knowing what to say. Name someone. nice-t",
-        "horizontalOverflow": false,
-        "consoleErrors": [],
-        "pageErrors": [],
-        "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "nice-to-meet-u",
+      "hasCanvas": false,
+      "bodyTextLen": 311,
+      "bodyTextHash": "688a63fcb8fa138f1af040f617b99833e588685bf2b52c2ad5af5f7babaea256",
+      "bodyTextPrefix": "nice-to-meet-u Walk in knowing what to say. Name someone. nice-t",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
     }
   },
   "brandWarnings": [],
