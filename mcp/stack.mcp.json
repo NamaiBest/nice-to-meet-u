@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "apify": {
+      "type": "http",
+      "url": "https://mcp.apify.com?tools=actors,docs,apify/rag-web-browser,apify/instagram-scraper"
+    },
+    "exa": {
+      "type": "http",
+      "url": "https://mcp.exa.ai/mcp"
+    },
+    "tavily": {
+      "type": "http",
+      "url": "https://mcp.tavily.com/mcp/"
+    },
+    "firecrawl": {
+      "type": "http",
+      "url": "https://mcp.firecrawl.dev/v2/mcp"
+    },
+    "parallel": {
+      "type": "http",
+      "url": "https://search.parallel.ai/mcp"
+    }
+  }
+}
