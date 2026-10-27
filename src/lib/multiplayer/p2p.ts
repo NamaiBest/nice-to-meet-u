@@ -241,7 +241,7 @@ export class P2PRoom {
     this.emitPeers();
   }
 
-  // ── per-pair connection ───────────────────────────────────────────────────────
+  // ── per-pair connection ──────────────────────────────────────────────────────────
 
   private connectTo(peerId: string, name: string, initiator: boolean): PeerSlot | null {
     if (this.closed) return null;
