@@ -59,7 +59,7 @@ const tcpRow = (sl, local, state, inode) =>
     "1",
     "0000",
     "100",
-  ].join("\n");
+  ].join(" ");
 
 const PROC_NET_TCP = [
   "  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt uid timeout inode",
